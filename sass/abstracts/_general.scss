@@ -1,0 +1,16 @@
+html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+    background-color: var(--color-white);
+}
+
+@media screen and (min-width: 48em) {
+    html {
+        font-size: 100%;
+    }
+}
+
+h2 {
+    text-align: center;
+}
+
