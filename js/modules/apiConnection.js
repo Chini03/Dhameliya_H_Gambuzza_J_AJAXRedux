@@ -19,7 +19,6 @@ export function apiConnection() {
                 const img = document.createElement('img');
                 // console.log(movie.opening_crawl);
                 a.textContent = movie.title;
-                a.dataset.movieDescription = movie.opening_crawl;
                 a.dataset.id = index;
                 // console.log(`${index}.jpg`);
                 // img.src = `${index}.jpg`;
@@ -50,7 +49,6 @@ export function apiConnection() {
         // console.log(e.currentTarget.dataset.movieDescription);
         console.log(e.currentTarget.dataset.id);
         const position = e.currentTarget.dataset.id;
-        const description = e.currentTarget.dataset.movieDescription;
         fetch("https://swapi.info/api/films")
         .then(response => response.json())
         .then(function(response) {
@@ -61,10 +59,11 @@ export function apiConnection() {
             const reviewHeading = clone.querySelector(".review-heading");
             const reviewDirector = clone.querySelector(".review-director");
 
-            reviewDescription.innerHTML = description;
+            reviewDescription.innerHTML = response[position].opening_crawl;
             // console.log(response[position].title);
             reviewHeading.innerHTML = response[position].title;
             reviewDirector.innerHTML = response[position].director;
+            
 
             reviewCon.appendChild(clone);
         })
