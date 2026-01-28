@@ -23,6 +23,7 @@ HTML5, CSS3, JavaScript, AJAX, JSON
 Git, Figma
 
 ## Features <a id="features"></a>
+- Fully Responsive
 - API Connection
 - JSON Usage
 - Valid HTML and CSS
