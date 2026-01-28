@@ -13,15 +13,16 @@ export function apiConnection() {
 
             const ul = document.createElement("ul");
 
-            movies.forEach(movie => {
+            movies.forEach((movie, index) => {
                 const li = document.createElement("li");
                 const a  = document.createElement("a");
                 const img = document.createElement('img');
                 // console.log(movie.opening_crawl);
                 a.textContent = movie.title;
                 a.dataset.movieDescription = movie.opening_crawl;
-                // console.log(`${movie.episode_id}.jpg`);
-                // img.src = `${movie.episode_id}.jpg`;
+                a.dataset.id = index;
+                // console.log(`${index}.jpg`);
+                // img.src = `${index}.jpg`;
                 // li.appendChild(img);
                 li.appendChild(a);
                 ul.appendChild(li);
@@ -46,7 +47,9 @@ export function apiConnection() {
     }
 
     function getReview(e) {
-        console.log(e.currentTarget.dataset.movieDescription);
+        // console.log(e.currentTarget.dataset.movieDescription);
+        console.log(e.currentTarget.dataset.id);
+        const position = e.currentTarget.dataset.id;
         const description = e.currentTarget.dataset.movieDescription;
         fetch("https://swapi.info/api/films")
         .then(response => response.json())
@@ -59,9 +62,9 @@ export function apiConnection() {
             const reviewDirector = clone.querySelector(".review-director");
 
             reviewDescription.innerHTML = description;
-            console.log(response);
-            reviewHeading.innerHTML = response.title;
-            reviewDirector.innerHTML = response.director;
+            // console.log(response[position].title);
+            reviewHeading.innerHTML = response[position].title;
+            reviewDirector.innerHTML = response[position].director;
 
             reviewCon.appendChild(clone);
         })
