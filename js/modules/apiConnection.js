@@ -22,10 +22,17 @@ export function apiConnection() {
                 a.dataset.id = index;
                 // console.log(`${index}.jpg`);
                 // img.src = `${index}.jpg`;
-                // li.appendChild(img);
+                img.src = `#`;
+                li.appendChild(img);
                 li.appendChild(a);
                 ul.appendChild(li);
             }); 
+            // ul.classList.add(
+            //     "one-item",
+            //     "sm-one-item",
+            //     "md-three-items",
+            //     "lg-three-items"
+            // );
             movieBox.appendChild(ul);
         })
         .then(function() {

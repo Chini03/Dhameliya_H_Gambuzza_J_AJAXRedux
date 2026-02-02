@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harlowe D's Portfolio</title>
+    <title>Star Wars Movies</title>
     <link rel="icon" href="#">
     <script src="https://kit.fontawesome.com/bb4be9e166.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,113 +24,71 @@
     <header class="head">
         <h2 class="visually-hidden">Website Header</h2>
 
-        <div class="two-items sm-two-items md-two-items lg-two-items headerWrapper">
-
-            <div>
-                <a href="index.html" class="logo logoWrapper">
-                    <img src="#" alt="Harlowe's Brand Logo" class="navLogo">
-                </a>
-            </div>
-
-           <div class="menuWrapper">
-                <!-- Desktop Nav -->
-                <nav id="desktopMenu">
-                    <h3 class="visually-hidden">Main Navigation</h3>
-                    <ul>
-                        <li><a href="index.html" aria-label="Go to Case Studies">Home</a></li>
-                        <li><a href="#caseStudiesSection" aria-label="Go to Case Studies">Case Studies</a></li>
-                        <li><a href="#projectsSection" aria-label="Go to Projects">Projects</a></li>
-                        <li><a href="#technologiesSection" aria-label="Go to Technologies">Technologies</a></li>
-                        <li><a href="about.html" aria-label="Go to About">About</a></li>
-                        <li><a href="#contactSection" aria-label="Go to Contact Me">Contact</a></li>
-                    </ul>
-                </nav>
-
-                <div class="mobileIconWrapper main-nav">
-                    <i aria-hidden="true" class="fa-solid fa-bars mobileIcon"></i>
-                </div>
-
-                <!-- Mobile Nav -->
-                <nav id="mobileMenu">
-                    <h3 class="visually-hidden">Mobile Main Navigation</h3>
-                    <div class="alignItemRow">
-                        <img src="#" alt="Harlowe's Brand Logo" class="navLogo">
-                        <button id="mobileMenuCloseBtn" aria-label="Close Mobile Menu Button">&times;</button>
-                    </div>
-                    <ul>
-                        <li><a href="index.html" aria-label="Go to Case Studies">Home</a></li>
-                        <li><a href="#caseStudiesSection" aria-label="Go to Case Studies">Case Studies</a></li>
-                        <li><a href="#projectsSection" aria-label="Go to Projects">Projects</a></li>
-                        <li><a href="#technologiesSection" aria-label="Go to Technologies">Technologies</a></li>
-                        <li><a href="about.html" aria-label="Go to About">About</a></li>
-                        <li><a href="#contactSection" aria-label="Go to Contact Me">Contact</a></li>
-                    </ul>
-                </nav>
-           </div>
-        </div>
+        
     </header>
     <main id="main" class="main">
         <h1 class="visually-hidden">Welcome to Stars Wars Information Website</h1>
-        <section id="movieSection">
-           <div class="full">
-                <div>
-                    <h2>Movies</h2>
-                </div>
-                <div id="movie-box">
-                    <!-- dynamically generated list goes here -->
-                </div>
-           </div>
+        <section id="heroSection">
+            <h2 class="visually-hidden">Hero Section</h2>
+
         </section>
-        <section class="review-box">
-            <div class="full">
-                <div>
-                    <h2>Review</h2>
-                </div>
-                <div id="review-con">
-                    <!-- template inserted here -->
-                </div>
-                <template id="review-template">
-                    <div>
-                        <h3 class="review-heading"></h3>
-                        <p class="review-director"></p>
-                        <p class="review-description"></p>
+        <div id="informationWrapper" class="one-item sm-one-item md-one-item lg-one-item">
+            <section>
+                <div class="one-item sm-one-item md-one-items lg-one-items">
+                    <div class="intro-text">
+                        <h2>Welcome to the galaxy</h2>
+                        <p>
+                            Meet the characters of Star Wars, loaded straight from an API.
+                            Tap a profile to see their stats and background.
+                        </p>
                     </div>
-                </template>
+
+                    <div class="intro-search">
+                        <input type="search" placeholder="Search for a movie">
+                    </div>
+                </div>
+            </section>
+            <section id="movieSection">
+            <div class="full">
+                    <div>
+                        <h2 class="visually-hidden">Movies</h2>
+                    </div>
+                    <div id="cardWrapper">
+                        <!-- <div>
+                            <button class="nav prev" aria-label="Previous characters">&#10094;</button>
+                        </div> -->
+                        <div id="movie-box">
+                            <!-- dynamically generated list goes here -->
+                        </div>
+                        <!-- <div>
+                            <button class="nav next" aria-label="Next characters">&#10095;</button>
+                        </div> -->
+                        
+                    </div>
             </div>
-        </section>
+            </section>
+            <section class="review-box">
+                <div class="full">
+                    <div>
+                        <h2 class="review-title">Review</h2>
+                    </div>
+                    <div id="review-con">
+                        <!-- template inserted here -->
+                    </div>
+                    <template id="review-template">
+                        <div>
+                            <h3 class="review-heading"></h3>
+                            <p class="review-director"></p>
+                            <p class="review-description"></p>
+                        </div>
+                    </template>
+                </div>
+            </section>
+        </div>
     </main>
     <footer class="foot">
         <h2 class="visually-hidden">Website Footer</h2>
-        <div class="one-item sm-one-item md-one-item lg-three-items footerWrapper">
-            <div>
-                <a href="index.html" class="logo logoWrapper">
-                    <img src="#" alt="Harlowe's Brand Logo" class="footNavLogo">
-                </a>
-            </div>
-            <nav class="footerNav">
-                <h3 class="visually-hidden">Footer Navigation</h3>
-                <ul class="one-item sm-one-item md-one-item lg-six-items">
-                    <li><a href="index.html" aria-label="Go to Case Studies">Home</a></li>
-                    <li><a href="#caseStudiesSection" aria-label="Go to Case Studies">Case Studies</a></li>
-                        <li><a href="#projectsSection" aria-label="Go to Projects">Projects</a></li>
-                        <li><a href="#technologiesSection" aria-label="Go to Technologies">Technologies</a></li>
-                        <li><a href="about.html" aria-label="Go to About">About</a></li>
-                        <li><a href="#contactSection" aria-label="Go to Contact Me">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="footerSocials">
-                <ul>
-                    <li><a href="https://www.instagram.com/chini_03_" target="_blank"
-                            aria-label="Harlowe on Instagram"><i class="fa-brands fa-instagram"
-                                aria-hidden="true"></i></a>
-                    </li>
-                    <li><a href="https://www.linkedin.com/in/harlowe-hansini-d-dhameliya-a01282265_" target="_blank"
-                            aria-label="Harlowe on LinkedIn"><i class="fa-brands fa-linkedin"
-                                aria-hidden="true"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        
         <div class="one-item sm-one-item md-one-item lg-one-item footerCopy">
             <p>&copy; Copyright Harlowe D</p>
         </div>
