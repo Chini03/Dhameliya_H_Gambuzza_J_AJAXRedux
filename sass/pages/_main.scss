@@ -4,9 +4,47 @@
 ___________________________________________ */
 
 /*  
-    00. Movie Section
+    00. Information Wrapper Section
+    01. Movie Section
+    02. Review Section
 
 */    
+
+/* ------------- Information Wrapper Section -------------*/
+
+#informationWrapper {
+    background-image: url("../images/infoSectionBg.jpeg");
+    background-size: cover;
+    padding: 2em 4em;
+}
+
+.intro-text {
+    h2 {
+        font-size: 4em;
+        color: rgb(172, 172, 47);
+        margin: .5em 0;
+    }
+
+    p {
+        color: white;
+        margin-bottom: .5em;
+        font-size: 2em;
+    }
+}
+
+.intro-search {
+    margin-bottom: 2em;
+    input {
+        border-radius: 2em;
+        padding: .5em 6em .25em .5em;
+        background-color: rgba(255, 255, 255, 0.334);
+        border: .1em solid black;
+        
+    }
+    input::placeholder {
+        color: white;
+    }
+}
 
 /* ------------- Movie Section -------------*/
 
@@ -15,4 +53,60 @@ ___________________________________________ */
         font-size: 1em;
         cursor: pointer;
     }
+}
+
+#cardWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    button {
+        padding: .5em 1em;
+        border-radius: 4em;
+        background-color: white;
+        margin-top: 2em;
+    }
+
+    #movie-box {
+        overflow: hidden;
+        // position: relative;
+
+        ul {
+            display: flex;
+            gap: 2em;
+            // flex-direction: row;
+        }
+        li {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            // flex: 0 1 clamp(180px, 22vw, 280px);
+            padding: 1em;
+            background-color: gray;
+            border-radius: .1em;
+            // margin: 2em;
+            img {
+                margin-bottom: 1em;
+                height: 40%;
+            }
+        }
+    }
+}
+
+
+/* ------------- Review Section -------------*/
+
+#review-con {
+    background-color: gray;
+    padding: 2em;
+    border-radius: .1em;
+    margin-top: 1em;
+}
+
+.review-title {
+    color: white;
+}
+
+.review-director {
+    font-weight: bold;
 }
