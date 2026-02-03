@@ -20,25 +20,33 @@
 </head>
 <body class="site">
     <a href="#main" class="skip-link screen-reader-text">Skip to main content</a>
-    <h1 class="visually-hidden">Welcome to a Satr wars information Website</h1>
-    <header class="head">
+    <h1 class="visually-hidden">Welcome to a Star wars information Website</h1>
+     <!-- cambiar aqui  -->
+        <header class="head" id="site-header">
         <h2 class="visually-hidden">Website Header</h2>
-        
-        <a class="one-item header-logo" href="index.html" aria-label="Home">
-        <img
-            src="images/logo-sw.png"
-            alt="Star Wars"
-            class="header-logo-img"
-         />
+
+        <a class="logo header-logo" href="index.html" aria-label="Home">
+            <img src="images/logo-sw.png" alt="Star Wars" class="header-logo-img" />
         </a>
-        
-    </header>
+        </header>
+
     <main id="main" class="main">
         <h1 class="visually-hidden">Welcome to Stars Wars Information Website</h1>
-        <section id="heroSection">
-            <h2 class="visually-hidden">Hero Section</h2>
+        <section id="hero-section">
+            <h2 class="visually-hidden">Video Hero</h2>
+                <video
+                        class="intro-video"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                    >
+                        <source src="video/hero-video.mp4" type="video/mp4" />
+                </video>
 
-        </section>
+                    <div class="cover"></div>
+                    </section>
+
         <div id="informationWrapper" class="one-item sm-one-item md-one-item lg-one-item">
             <section>
                 <div class="one-item sm-one-item md-one-items lg-one-items">
@@ -96,7 +104,7 @@
     <footer class="foot">
         <h2 class="visually-hidden">Website Footer</h2>
         
-        <div class="one-item sm-one-item md-one-item lg-one-item footerCopy">
+        <div class="one-item sm-one-item md-one-item lg-one-item footer-copy">
         <p class="footer-disclaimer">
         © character data sourced from swapi. star wars and all related properties are ©
         lucasfilm ltd. and/or the walt disney company. non-commercial student project for
