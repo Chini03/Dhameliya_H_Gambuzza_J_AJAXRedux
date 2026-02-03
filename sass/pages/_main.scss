@@ -4,16 +4,45 @@
 ___________________________________________ */
 
 /*  
-    00. Information Wrapper Section
-    01. Movie Section
-    02. Review Section
+    00. video section
+    01. Information Wrapper Section
+    02. Movie Section
+    03. Review Section
 
 */    
+
+/* ------------- Video Section -------------*/
+
+
+#hero-section{
+  position: relative;
+  width: 100%;
+  height: 85vh;  
+  overflow: hidden;
+}
+
+
+#hero-section .intro-video{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+#hero-section .cover{
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: rgba(0,0,0,0.35);
+}
+
 
 /* ------------- Information Wrapper Section -------------*/
 
 #informationWrapper {
-    background-image: url("../images/infoSectionBg.jpeg");
+    background-image: url("../images/background-section.png");
     background-size: cover;
     padding: 2em 4em;
 }
@@ -21,7 +50,7 @@ ___________________________________________ */
 .intro-text {
     h2 {
         font-size: 4em;
-        color: rgb(172, 172, 47);
+        color: rgb(255, 255, 0);
         margin: .5em 0;
     }
 
