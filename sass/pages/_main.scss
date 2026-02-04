@@ -100,23 +100,22 @@ ___________________________________________ */
         overflow: hidden;
         // position: relative;
 
-        ul {
-            display: flex;
-            gap: 2em;
-            // flex-direction: row;
-        }
         li {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: center;
             // flex: 0 1 clamp(180px, 22vw, 280px);
             padding: 1em;
-            background-color: gray;
+            background-color: rgb(37, 36, 36);
             border-radius: .1em;
+            margin-bottom: 1em;
             // margin: 2em;
             img {
                 margin-bottom: 1em;
-                height: 40%;
+                // height: 40%;
+            }
+            a {
+                color: white;
             }
         }
     }
@@ -126,10 +125,11 @@ ___________________________________________ */
 /* ------------- Review Section -------------*/
 
 #review-con {
-    background-color: gray;
+    background-color: rgb(37, 36, 36);
     padding: 2em;
     border-radius: .1em;
     margin-top: 1em;
+    color: white;
 }
 
 .review-title {
