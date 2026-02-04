@@ -20,19 +20,21 @@ export function apiConnection() {
                 // console.log(movie.opening_crawl);
                 a.textContent = movie.title;
                 a.dataset.id = index;
+                const imgIndex = index + 1;
                 // console.log(`${index}.jpg`);
-                // img.src = `${index}.jpg`;
-                img.src = `#`;
+                img.src = `../images/movies/movie${imgIndex}.jpg`;
+                img.alt = `${movie.title}'s Poster`;
+                // img.src = `#`;
                 li.appendChild(img);
                 li.appendChild(a);
                 ul.appendChild(li);
             }); 
-            // ul.classList.add(
-            //     "one-item",
-            //     "sm-one-item",
-            //     "md-three-items",
-            //     "lg-three-items"
-            // );
+            ul.classList.add(
+                "one-item",
+                "sm-one-item",
+                "md-one-item",
+                "lg-three-items"
+            );
             movieBox.appendChild(ul);
         })
         .then(function() {
