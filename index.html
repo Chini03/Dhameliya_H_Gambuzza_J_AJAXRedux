@@ -7,13 +7,16 @@
     <link rel="icon" href="#">
     <script src="https://kit.fontawesome.com/bb4be9e166.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+        
     <link rel="stylesheet" href="https://cdn.plyr.io/3.8.3/plyr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
+
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
     <script type="module" defer src="js/home.js"></script>
@@ -45,6 +48,7 @@
                 </video>
 
                     <div class="cover"></div>
+
                     </section>
 
         <div id="informationWrapper" class="one-item sm-one-item md-one-item lg-one-item">
@@ -53,35 +57,34 @@
                     <div class="intro-text">
                         <h2>Welcome to the galaxy</h2>
                         <p>
-                            Meet the characters of Star Wars, loaded straight from an API.
-                            Tap a profile to see their stats and background.
+                            Explore the Star Wars movies loaded straight from an API.
+                Tap a movie to see its stats and background.
                         </p>
                     </div>
 
                     <div class="intro-search">
-                        <input type="search" placeholder="Search for a movie">
+                    <form id="search-form" class="search-form">
+                  <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                    <input id="search-input" type="search" placeholder="Search for a movie" />
+                    </form>
+
                     </div>
+
                 </div>
             </section>
-            <section id="movieSection">
-            <div class="full">
-                    <div>
-                        <h2 class="visually-hidden">Movies</h2>
-                    </div>
-                    <div id="cardWrapper">
-                        <!-- <div>
-                            <button class="nav prev" aria-label="Previous characters">&#10094;</button>
-                        </div> -->
-                        <div id="movie-box">
-                            <!-- dynamically generated list goes here -->
-                        </div>
-                        <!-- <div>
-                            <button class="nav next" aria-label="Next characters">&#10095;</button>
-                        </div> -->
-                        
-                    </div>
+            <div id="cardWrapper">
+            <button class="nav prev" aria-label="Previous movie">&#10094;</button>
+
+            <div class="carousel-viewport">
+                <div id="movie-box" >
+                <!-- dynamically generated list goes here -->
+                </div>
             </div>
-            </section>
+
+            <button class="nav next" aria-label="Next movie">&#10095;</button>
+            </div>
+
+
             <section class="review-box">
                 <div class="full">
                     <div>
