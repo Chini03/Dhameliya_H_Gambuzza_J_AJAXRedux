@@ -1,6 +1,8 @@
 # STAR WARS - AJAX Redux
 **Welcome to our Star Wars site! This demonstrates the use of connecting to an API and using the JSON object to access information and display it on a website.**
 
+<img src="images/readme-banner.jpg" alt="star wars banner" width="800">
+
 ## Index
 - [About](#about)
 - [Skills](#skills)
